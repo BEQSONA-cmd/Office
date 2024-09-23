@@ -5,11 +5,11 @@ const path = require('path');
 const mimeTypes = {
     '.html': 'text/html',
     '.css': 'text/css',
-    '.js': 'text/javascript'
+    '.js': 'text/javascript',
 };
 
 const server = http.createServer((req, res) => {
-    const filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+    const filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
     const extname = path.extname(filePath);
     const contentType = mimeTypes[extname] || 'application/octet-stream';
 
@@ -22,8 +22,7 @@ const server = http.createServer((req, res) => {
             res.end(content, 'utf-8');
         }
     });
-}
-);
+});
 
 server.listen(8080, () => {
     console.log('Server running at http://localhost:8080');
