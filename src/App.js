@@ -9,13 +9,13 @@ const containerStyle =
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    backgroundColor: '#f4f4f4',
+    backgroundColor: '#333',
 };
 
 const boxStyle = 
 {
     padding: '1rem',
-    border: '1px solid #333',
+    border: '1px solid #ddd',
     borderRadius: '5px',
     backgroundColor: '#333',
     color: '#fff',
@@ -50,7 +50,7 @@ const App = () =>
             <div style={boxStyle}>
                 <h1>Welcome to My React App!</h1>
                 <p>This is a simple application using React.</p>
-                <SearchBox onSearch={handleSearch} />
+
                 <Button label="Click Me" onClick={handleButtonClick} />
             </div>
         </div>

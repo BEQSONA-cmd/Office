@@ -7,7 +7,7 @@ const searchBoxStyle =
     width: '300px',
     marginBottom: '10px',
     borderRadius: '5px',
-    border: '1px solid #ddd'
+    border: '1px solid #ddd',
 };
 
 const SearchBox = ({ onSearch }) => 
