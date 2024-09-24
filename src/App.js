@@ -22,7 +22,8 @@ const boxStyle =
     textAlign: 'center'
 };
 
-const searchBoxContainerStyle = {
+const searchBoxContainerStyle = 
+{
     position: 'absolute',
     top: '10px',
     left: '10px',

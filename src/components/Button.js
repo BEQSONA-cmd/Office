@@ -1,6 +1,7 @@
 import React from 'react';
 
-const buttonStyle = {
+const buttonStyle = 
+{
     padding: '10px 20px',
     fontSize: '16px',
     color: '#fff',
@@ -10,7 +11,8 @@ const buttonStyle = {
     cursor: 'pointer'
 };
 
-const Button = ({ label, onClick }) => {
+const Button = ({ label, onClick }) => 
+{
     return (
         <button style={buttonStyle} onClick={onClick}>
             {label}

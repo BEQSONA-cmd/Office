@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const searchBoxStyle = {
+const searchBoxStyle = 
+{
     padding: '10px',
     fontSize: '16px',
     width: '300px',
@@ -9,14 +10,17 @@ const searchBoxStyle = {
     border: '1px solid #ddd'
 };
 
-const SearchBox = ({ onSearch }) => {
+const SearchBox = ({ onSearch }) => 
+{
     const [query, setQuery] = useState('');
 
-    const handleInputChange = (event) => {
+    const handleInputChange = (event) => 
+    {
         setQuery(event.target.value);
     };
 
-    const handleSearch = () => {
+    const handleSearch = () => 
+    {
         onSearch(query);
     };
 

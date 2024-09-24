@@ -1,25 +1,32 @@
 const path = require('path');
 
-module.exports = {
+module.exports = 
+{
     entry: './src/index.js',
-    output: {
+    output:
+    {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js',
     },
-    devServer: {
-        static: {
+    devServer: 
+    {
+        static: 
+        {
             directory: path.join(__dirname, 'public'),
         },
         compress: true,
         port: 8080,
         hot: true,
+    },
     mode: 'development',
-    module: {
+    module: 
+    {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
+                use: 
+                {
                     loader: 'babel-loader',
                 },
             },
