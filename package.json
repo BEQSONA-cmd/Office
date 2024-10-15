@@ -1,5 +1,5 @@
 {
-  "name": "my-app-nextjs",
+  "name": "office",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.4.8",
-    "framer-motion": "^11.8.0",
-    "next": "14.2.13",
+    "axios": "^1.7.7",
+    "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18"
   },
