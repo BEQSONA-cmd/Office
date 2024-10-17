@@ -22,7 +22,6 @@ export default function Index(){
         <div>
             <h1>{message}</h1> 
             <button onClick={func} className="p-2 bg-blue-700 rounded-lg hover:bg-purple-300">click</button>
-
         </div>
     )  
 }

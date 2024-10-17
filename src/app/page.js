@@ -1,18 +1,10 @@
-import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() 
 {
     return (
       <>
-        <Head>
-          <title>Beqa Tvildiani</title>
-          <meta name="description" content="Beqa Tvildiani's personal website" />
-          <link rel="icon" href="/favicon/favicon.ico" />
-          <link rel="stylesheet" href="assets/css/main.css" />
-        </Head>
-  
-          <article id="top" className="wrapper style1 py-16">
+          <article id="work" className="wrapper style3 py-16 bg-gray-900">
             <div className="container mx-auto flex flex-wrap">
               {/* Image on the left */}
               <div className="w-full md:w-1/2 p-4">

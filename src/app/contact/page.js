@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-      <article id="contact" className="wrapper style4 py-16 bg-gray-200">
+      <article id="contact" className="wrapper style4 py-16 bg-gray-900">
       <div className="container mx-auto">
         <header>
           <h2 className="text-3xl font-semibold">Don't hesitate to reach out.</h2>

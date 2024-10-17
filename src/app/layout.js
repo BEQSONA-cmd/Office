@@ -1,5 +1,7 @@
 import './globals.css';
 import Head from 'next/head';
+import React from 'react';
+
 
 export const metadata = {
   title: 'Beqa Tvildiani Portfolio',
