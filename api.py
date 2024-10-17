@@ -4,10 +4,10 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/api/hello', methods=['GET'])
+@app.route('/send', methods=['GET'])
 
 def hello():
-    return jsonify({"message": "Hello from Flask!"})
+    return jsonify({"message": "Your message has been sent successfully."})
 
 @app.route('/api/data', methods=['POST'])
 
