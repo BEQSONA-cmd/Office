@@ -13,7 +13,7 @@ export default function Contact() {
               name="name"
               id="name"
               placeholder="Name"
-              className="w-full border p-2 rounded-lg"
+              className="w-full bg-gray-800 border p-2 rounded-lg"
               required
             />
           </div>
@@ -23,7 +23,7 @@ export default function Contact() {
               name="email"
               id="email"
               placeholder="Phone Number / Email"
-              className="w-full border p-2 rounded-lg"
+              className="w-full bg-gray-800 border p-2 rounded-lg"
               required
             />
           </div>
@@ -32,15 +32,15 @@ export default function Contact() {
               name="message"
               id="message"
               placeholder="Message"
-              className="w-full border p-4 rounded-lg"
+              className="w-full bg-gray-800 border p-2 rounded-lg"
               required
             ></textarea>
           </div>
           <div className="w-full flex justify-start p-4">
-            <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-lg">
+            <button type="submit" className="shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg">
               Send Message
             </button>
-            <button type="reset" className="ml-4 bg-gray-500 text-white py-2 px-4 rounded-lg">
+            <button type="reset" className="ml-4 bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg">
               Clear Form
             </button>
           </div>

@@ -14,6 +14,7 @@ export default function Home()
                   alt="Beqa Tvildiani"
                   width={400}
                   height={400}
+                  style={{ borderRadius: '20%' }}
                 />
               </div>
   

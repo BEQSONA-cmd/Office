@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
         <nav className="bg-gray-800 p-4">
           <ul className="container mx-auto flex items-center">
             <li><a href="/" className="text-white">Home</a></li>
-            <li><a href="work" className="ml-4 text-white">Work</a></li>
             <li><a href="portfolio" className="ml-4 text-white">Portfolio</a></li>
+            <li><a href="work" className="ml-4 text-white">Work</a></li>
             <li><a href="contact" className="ml-4 text-white">Contact</a></li>
           </ul>
         </nav>
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
 
         {/* Footer */}
-        <footer className="py-8 bg-gray-900 text-white">
+        <footer className="bg-gray-800 p-4">
           <div className="container mx-auto text-center">
             <p>&copy; chxikvia.tech | Design by <a href="https://github.com/BEQSONA-cmd" className="text-blue-400">BEQSONA-cmd</a></p>
           </div>
