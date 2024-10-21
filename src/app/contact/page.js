@@ -38,10 +38,10 @@ const handleSubmit = async (e, setFormData) =>
   e.preventDefault();
   try 
   {
+    window.location.href = "/send";
     await sendFormData();
     handleReset(setFormData);
 
-    window.location.href = "/send";
   } 
   catch (error) 
   {
