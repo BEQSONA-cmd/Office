@@ -24,7 +24,7 @@ export default function Home() {
                 <div className="w-full md:w-1/2 p-4">
                     <header>
                         <h1 className="text-4xl mb-4 text-center font-bold">
-                            Hi. I'm <strong>Beqa Tvildiani</strong>.
+                            Hi. I'm <strong>Beqa Tvildiani</strong>. (Beqasona)
                         </h1>
                     </header>
                     <div className="text-center">
