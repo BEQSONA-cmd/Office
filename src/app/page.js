@@ -24,10 +24,14 @@ export default function Home()
                   Hi. I'm <strong>Beqa Tvildiani</strong>.
                 </h1>
               </header>
-              <p className="text-lg font-medium">
+              <p className="mb-4 text-lg font-medium">
                 <strong>I am a Software Engineer proficient 👨‍💻.</strong> Passionate about crafting efficient code, building dynamic web applications, and automating tasks.
               </p>
-              <a href="portfolio" className="shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg">About Me</a>
+              <a href="portfolio">
+                  <button className="text-lg shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg hover:scale-105 duration-300">
+                  Get in touch with me
+              </button>
+              </a>
             </div>
           </div>
         </article>

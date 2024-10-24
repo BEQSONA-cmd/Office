@@ -91,10 +91,10 @@ export default function Contact() {
 
   return (
     <article id="contact" className="wrapper style4 py-16 bg-gray-900">
-      <div className="container mx-auto">
-        <header>
-          <h2 className="text-3xl font-semibold">Don't hesitate to reach out.</h2>
-          <p>Please enter your email, phone number, or any other contact information so I can get back to you with an answer.</p>
+      <div className="container mx-auto max-w-xl py-16">
+        <header className="text-center mb-6 mx-4">
+          <h2 className="text-4xl font-semibold mb-4">Don't hesitate to reach out.</h2>
+          <p className="text-m"> Please enter your email, phone number, or any other contact information so I can get back to you with an answer.</p>
         </header>
         <form className="w-full flex flex-wrap" onSubmit={(e) => handleSubmit(e, setFormData)}>
           <InputField
@@ -117,16 +117,16 @@ export default function Contact() {
             value={formDataState.message}
             onChange={(e) => handleInputChange(e, setFormData)}
           />
-          <div className="w-full flex justify-start p-4">
+          <div className="text-lg w-full flex justify-start p-4">
             <button
               type="submit"
-              className="shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg"
+              className="shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg"
             >
               Send Message
             </button>
             <button
               type="reset"
-              className="ml-4 bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg"
+              className="ml-4 bg-gray-500 hover:bg-gray-600 font-black py-3 px-6 rounded-lg"
               onClick={() => handleReset(setFormData)}
             >
               Clear Form

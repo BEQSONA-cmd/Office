@@ -32,10 +32,10 @@ export default function Send()
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">{main_message}</h1>
+        <h1 className="text-4xl font-bold mb-2">{main_message}</h1>
         {func()}
-        <p className="text-lg mb-4">{message}</p>
-        <a href="/" className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg">
+        <p className="text-xl mb-6">{message}</p>
+        <a href="/" className="text-xl shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg">
           Go Back to Home
         </a>
       </div>

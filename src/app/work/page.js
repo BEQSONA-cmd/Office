@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const works = [
     {
         title: "Cabinette",
@@ -43,52 +47,57 @@ const works = [
     },
 ];
 
-const Project = ({work}) => {
+const Project = ({ work, index }) => {
     return (
-        <article className="flex items-center justify-center box style2 bg-gray-800 p-6 rounded-lg shadow-md flex flex-col h-full w-full">
-            <a
-                href={work.link}
-                className="image featured"
-                target="_blank"
-            >
-                <img src={work.image} alt="Debug Leaks" />
-            </a>
-            <h3>
-                <a
-                    href={work.link}
-                    target="_blank"
-                    className="font-black"
-                >
-                    {work.title}
-                </a>
-            </h3>
-            <div className="text-center">
-                <p className="text-xs">
-                    {work.description}
-                </p>
-                <p className="text-sm">
-                    <span className="font-bold text-blue-300">Languages:</span> <strong>{work.languages}</strong>
-                </p>
+        <motion.a
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                delay: 0.1 * index,
+            }}
+            href={work.link}
+            target="_blank"
+            className=""
+        >
+            <div className="box style2 bg-gray-800 p-6 rounded-lg shadow-md flex flex-col h-full w-full duration-300 hover:scale-105">
+                <img
+                    src={work.image}
+                    alt={work.title}
+                    className="image featured"
+                />
+                <h3 className="font-black mt-4 text-center">{work.title}</h3>
+                <div className="text-center mb">
+                    <p className="text-xs">{work.description}</p>
+                    <p className="text-sm">
+                        <span className="font-bold text-blue-300">
+                            Languages:
+                        </span>{" "}
+                        <strong>{work.languages}</strong>
+                    </p>
+                </div>
             </div>
-        </article>
+        </motion.a>
     );
 };
 
 export default function work() {
     return (
-        <article id="work" className="wrapper style3 py-16 bg-gray-900">
+        <article id="work" className="wrapper style3 py-8 bg-gray-900">
             <div className="container mx-auto">
-                <header>
-                    <h2 className="text-3xl font-semibold">
+                <header className="text-center">
+                    <h2 className="text-3xl font-semibold mb-2">
                         Here's some stuff I made recently.
                     </h2>
-                    <p className="text-lg">
+                    <p className="text-lg mb-6">
                         All of these are my side projects.
                     </p>
                 </header>
                 <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-5 mx-12">
                     {works.map((work, index) => (
-                        <Project key={index} work={work} />
+                        <Project key={index} work={work} index={index} />
                     ))}
                 </div>
                 <footer className="text-center mt-8">
@@ -96,11 +105,12 @@ export default function work() {
                         Have any questions? Feel free to ask! I'm open to
                         collaboration. Let's innovate together! 💡
                     </p>
-                    <a
-                        href="contact"
-                        className="shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg"
-                    >
-                        Get in touch with me
+                    <a href="contact">
+                        <button
+                            className="text-lg shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg hover:scale-105 duration-300"
+                        >
+                            Get in touch with me
+                        </button>
                     </a>
                 </footer>
             </div>

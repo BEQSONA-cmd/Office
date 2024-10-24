@@ -22,11 +22,11 @@ export default function RootLayout({ children }) {
       <body className="bg-white dark:bg-black text-gray-900 dark:text-gray-100">
         {/* Navbar */}
         <nav className="bg-gray-800 p-4">
-          <ul className="container mx-auto flex items-center">
-            <li><a href="/" className="text-white">Home</a></li>
-            <li><a href="portfolio" className="ml-4 text-white">Portfolio</a></li>
-            <li><a href="work" className="ml-4 text-white">Work</a></li>
-            <li><a href="contact" className="ml-4 text-white">Contact</a></li>
+          <ul className="container mx-auto flex gap-1 items-center">
+            <li><a href="/" className="text-white duration-300 hover:bg-gray-700 p-3 rounded-lg">Home</a></li>
+            <li><a href="portfolio" className="text-white hover:bg-gray-700 p-3 rounded-lg">Portfolio</a></li>
+            <li><a href="work" className="text-white hover:bg-gray-700 p-3 rounded-lg">Work</a></li>
+            <li><a href="contact" className="text-white hover:bg-gray-700 p-3 rounded-lg">Contact</a></li>
           </ul>
         </nav>
 
