@@ -7,10 +7,7 @@ export default function Home() {
     return (
         <article id="work" className="wrapper style3 py-16">
             <div className="container mx-auto flex flex-wrap max-w-[900px]">
-                <motion.div
-                    initial={{ rotate: 0, scale:0 }}
-                    animate={{ rotate: 360, scale:1 }}
-                    transition={{ duration: 2 }}
+                <div
                     className="relative mx-auto !h-[300px] !w-[300px] md:w-1/2 p-4"
                 >
                     <Image
@@ -19,12 +16,12 @@ export default function Home() {
                         alt="Beqa Tvildiani"
                         fill={true}
                     />
-                </motion.div>
+                </div>
 
                 <div className="w-full md:w-1/2 p-4">
                     <header>
                         <h1 className="text-4xl mb-4 text-center font-bold">
-                            Hi. I'm <strong>Beqa Tvildiani</strong>. (Beqasona)
+                            Hi. I'm <strong>Beqa Tvildiani</strong>.
                         </h1>
                     </header>
                     <div className="text-center">
