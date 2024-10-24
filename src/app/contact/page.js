@@ -120,13 +120,13 @@ export default function Contact() {
           <div className="text-lg w-full flex justify-start p-4">
             <button
               type="submit"
-              className="shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg"
+              className="text-lg shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg hover:scale-105 duration-300"
             >
               Send Message
             </button>
             <button
               type="reset"
-              className="ml-4 bg-gray-500 hover:bg-gray-600 font-black py-3 px-6 rounded-lg"
+              className="ml-4 bg-gray-500 hover:bg-gray-600 font-black py-3 px-6 rounded-lg hover:scale-105 duration-300"
               onClick={() => handleReset(setFormData)}
             >
               Clear Form

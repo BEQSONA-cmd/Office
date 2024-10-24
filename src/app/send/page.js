@@ -35,8 +35,11 @@ export default function Send()
         <h1 className="text-4xl font-bold mb-2">{main_message}</h1>
         {func()}
         <p className="text-xl mb-6">{message}</p>
-        <a href="/" className="text-xl shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg">
+        <a href="/">
+        <button
+        className="text-xl shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg hover:scale-105 duration-300">
           Go Back to Home
+        </button>
         </a>
       </div>
     </div>

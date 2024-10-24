@@ -127,6 +127,18 @@ export default function work() {
                         );
                     })}
                 </div>
+                <footer className="text-center mt-8">
+                    <p className="mb-6">
+                    I've always liked to code and 42 Wolfsburg turned out to be a great way to learn
+                    </p>
+                    <a href="work">
+                        <button
+                            className="text-lg shadow__btn large scrolly bg-purple-600 hover:bg-purple-700 font-black py-3 px-6 rounded-lg hover:scale-105 duration-300"
+                        >
+                            See some of my recent projects
+                        </button>
+                    </a>
+                </footer>
             </div>
         </article>
     );
