@@ -70,7 +70,9 @@ export default function work() {
             title: "AI Integration",
             description: (
                 <p>
-                    Built AI-driven platforms and Custom LLM Applications using:{" "}
+                    Built AI-driven platforms and Custom LLM Applications with:{" "}
+                    <strong>Python, JavaScript, FastAPI </strong>
+                    using:{" "}
                     <strong>OpenAI, Gemini AI.</strong>
                 </p>
             ),
