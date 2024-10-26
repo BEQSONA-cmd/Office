@@ -47,8 +47,8 @@ export default function work() {
             description: (
                 <p>
                     specializing in both backend using:{" "}
-                    <strong>Python, JavaScript/TypeScript, Next.js.</strong> and
-                    frontend: <strong>JavaScript/TypeScript, HTML, CSS</strong>
+                    <strong>Python, JavaScript (Flask and HTTP Server).</strong> and
+                    frontend: <strong>JavaScript, HTML, CSS, Next.js</strong>
                 </p>
             ),
             icon: <FaReact className="mx-auto" />,
@@ -58,9 +58,9 @@ export default function work() {
             title: "Scripting Languages",
             description: (
                 <p>
-                    Scripting for network protocols and interpreted programs
-                    using: <strong>Bash, Python, JavaScript.</strong> simulating
-                    Bash using :<strong> C. </strong>
+                    Simulating Bash using<strong> C </strong>programming language.
+                    and scripting for network protocols and interpreted programs
+                    using: <strong>Bash, Python, JavaScript.</strong> 
                 </p>
             ),
             icon: <MdOutlineTerminal className="mx-auto" />,

@@ -15,12 +15,11 @@ export default function RootLayout({ children }) {
         <nav className="bg-gray-800 p-4">
           <ul className="container mx-auto flex gap-1 items-center">
             <li><a href="/" className="text-white duration-300 hover:bg-gray-700 p-3 rounded-lg">Home</a></li>
-            <li><a href="portfolio" className="text-white hover:bg-gray-700 p-3 rounded-lg">Portfolio</a></li>
-            <li><a href="work" className="text-white hover:bg-gray-700 p-3 rounded-lg">Work</a></li>
-            <li><a href="contact" className="text-white hover:bg-gray-700 p-3 rounded-lg">Contact</a></li>
+            <li><a href="portfolio" className="text-white duration-300 hover:bg-gray-700 p-3 rounded-lg">Portfolio</a></li>
+            <li><a href="work" className="text-white duration-300 hover:bg-gray-700 p-3 rounded-lg">Work</a></li>
+            <li><a href="contact" className="text-white duration-300 hover:bg-gray-700 p-3 rounded-lg">Contact</a></li>
           </ul>
         </nav>
-
         {/* Main content */}
         <main className="bg-gray-900 min-h-[85vh]">{children}</main>
 
